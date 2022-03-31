@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts-icons/css/all.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card mt-5 shadow p-2 mx-auto" style="max-width: 400px;">
+            <img src="Images/1.jpg" alt="" class="img-fluid" id="image-cover" style="height: 450px;">
+            <div class="d-flex justify-content-center p-2 shadow border">
+                <button class="btn btn-transparent" id="previous">
+                    <i class="fas fa-backward"></i>
+                </button>
+
+                <button class="btn btn-transparent" id="shuffle">
+                    <i class="fas fa-random"></i>
+                </button>
+
+                <button class="btn btn-transparent" id="play">
+                    <i class="fas fa-play"></i>
+                </button>
+
+                <button class="btn btn-transparent" id="pause">
+                    <i class="fas fa-pause"></i>
+                </button>
+
+                <button class="btn btn-transparent" id="next">
+                    <i class="fas fa-forward"></i>
+                </button>
+
+                <!-- <input type="range" class="form-control" id="volume"> -->
+
+                <audio type="audio/mp3" id="music"></audio>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
